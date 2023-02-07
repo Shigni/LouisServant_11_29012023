@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import { Collapse, Carrousel, Tag, Rate, Host, Error } from '../../components';
 
+//Scroll on top
 export function Logement() {
   useEffect(() => {
     window.scrollTo(0, 0);
