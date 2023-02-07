@@ -3,6 +3,7 @@ import left from '../../assets/vector-left.svg';
 import right from '../../assets/vector-right.svg';
 
 export function Carrousel({ frames }) {
+  //Création de l'état initial
   const [current, setCurrent] = useState(0);
   const length = frames.length;
 
@@ -14,6 +15,7 @@ export function Carrousel({ frames }) {
   };
 
   return (
+    //Ajout des flêches de navigation, et navigation vers les images suivantes
     <section id="carrousel-container">
       {length > 1 && (
         <img

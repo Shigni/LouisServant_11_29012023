@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 export function Error() {
+  //Création de la page 404 avec un lien de retour a l'accueil
   return (
     <div className="errorContainer">
       <p className="errorNumber">404</p>

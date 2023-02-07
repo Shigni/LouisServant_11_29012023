@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo.svg';
 
 export function Header() {
+  //Création du header avec nav dynamique grâce à NavLink
   return (
     <nav className="navContainer">
       <NavLink className="navContainer__img" to="/">
