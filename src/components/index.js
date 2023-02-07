@@ -1,3 +1,4 @@
+// Export de * pour import plus propre
 export * from './AboutBanner/about-banner';
 export * from './Banner/banner';
 export * from './Card/card';
