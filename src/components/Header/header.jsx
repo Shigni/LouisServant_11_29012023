@@ -9,10 +9,10 @@ export function Header() {
         <img className="logo" src={Logo} alt="Logo" />
       </NavLink>
       <div>
-        <NavLink activeClassName="active" className="styledLink" to="/">
+        <NavLink activeclassname="active" className="styledLink" to="/">
           Accueil
         </NavLink>
-        <NavLink activeClassName="active" className="styledLink" to="/about">
+        <NavLink activeclassname="active" className="styledLink" to="/about">
           A propos
         </NavLink>
       </div>
