@@ -2,6 +2,7 @@ import { AboutBanner, Collapse } from '../../components';
 import aboutArray from '../../data/about.json';
 
 export function About() {
+  //Map pour exploiter les id
   return (
     <>
       <AboutBanner />

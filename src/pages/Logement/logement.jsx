@@ -11,10 +11,12 @@ export function Logement() {
   const params = useParams();
 
   const logement = logements.find(({ id }) => id === params.id);
+  //Affichage de la 404 si le lien n'existe pas
   if (logement === undefined) {
     return <Error />;
   }
 
+  //map pour exploiter les id
   const framePics = logement && logement.pictures;
   const tags = logement && logement.tags;
   const equipments = logement && logement.equipments;
@@ -26,6 +28,7 @@ export function Logement() {
       </li>
     ));
   return (
+    //Affichage des différents components
     logement && (
       <div key={params.id} className="fiche-container">
         <Carrousel frames={framePics} />

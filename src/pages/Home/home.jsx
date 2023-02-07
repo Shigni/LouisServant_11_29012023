@@ -4,6 +4,7 @@ import data from '../../data/logements.json';
 
 export function Home() {
   return (
+    //Map pour exploiter les id
     <>
       <Banner />
       <div className="cards-container">
