@@ -1,0 +1,59 @@
+@mixin fix-body {
+    max-width: $wmax;
+    min-width: $wmin;
+    margin: auto;
+}
+
+@mixin boxShadow {
+    box-shadow: 2px 2px 10px rgb(78, 76, 76);
+    transition: 0.2s ease;
+}
+
+@mixin fullscreen {
+    width: 100%;
+    height: 100%;
+}
+
+
+@mixin font($size, $weight) {
+    font-size: ($size);
+    font-style: normal;
+    font-weight: $weight;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@mixin flex-banner {
+    position: relative;
+    @include flex-center;
+    width: 100%;
+    background: $banner-background;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+@mixin bradius-small {
+    border-radius: 10px;
+}
+
+@mixin bradius-large {
+    border-radius: 25px;
+}

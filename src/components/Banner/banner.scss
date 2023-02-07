@@ -1,0 +1,36 @@
+.banner-container {
+	height: 111px;
+	@include bradius-small;
+	@include flex-banner;
+
+	@media screen and (min-width: $breakpoint-desktop) {
+		height: 223px;
+		@include bradius-large;
+		@include flex-banner;
+	}
+}
+
+.banner-text {
+	position: absolute;
+	top: 30%;
+	left: 5%;
+	right: 33%;
+	bottom: 80%;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+	color: $tertiary-color;
+	@include bradius-small;
+	width: 217px;
+	height: 48px;
+
+	@media screen and (min-width: $breakpoint-desktop) {
+		top: 0;
+		left: 0;
+		right: 0;
+		@include flex-center;
+		@include fullscreen;
+		@include font(48px, 500);
+		@include bradius-large;
+	}
+}

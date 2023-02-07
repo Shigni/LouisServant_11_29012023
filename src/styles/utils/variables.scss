@@ -1,0 +1,16 @@
+$primary-color: #ff6060;
+$secondary-color: #f6f6f6;
+$tertiary-color: #FFFFFF;
+
+$footer-color: #000000;
+$background-color: rgba(0, 0, 0, 0.3);
+$linear-cards: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+$about-image: $background-color url(../../assets/about-image.png);
+$mobile-about-image: $background-color url(../../assets/mobile-about-image.png);
+$banner-background: $background-color url(../../assets/background-banner.png);
+
+$breakpoint-desktop: 769px;
+
+$wmin: 375px;
+$wmax: 768px;

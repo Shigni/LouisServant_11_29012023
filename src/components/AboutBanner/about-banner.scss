@@ -1,0 +1,19 @@
+.aboutBackground {
+    @include flex-center;
+    background: $mobile-about-image;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 223px;
+    margin-top: 20px;
+    @include bradius-small;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        background: $about-image;
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include bradius-large;
+    }
+}
